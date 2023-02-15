@@ -8,6 +8,8 @@ Created on Sun Feb 12 17:55:00 2023
 import pandas as pd
 import numpy as np
 import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
 st.set_page_config(layout="wide")
 
 
@@ -16,8 +18,7 @@ st.subheader('Syed Sajjad Raza')
 
 
 # Load data into a pandas dataframe
-file = 'C:\\Users\\Home PC\\Desktop\\Streamlit FILE\\athlete_events.csv'
-df = pd.read_csv('athlete_events.csv')
+df = pd.read_csv('C:\\Users\\Home PC\\Desktop\\Streamlit FILE\\athlete_events.csv')
 
 # Check for missing values in each column
 print(df.isna().sum())
@@ -130,14 +131,3 @@ with st.container():
     season_medal_count = filtered_data.groupby(["Season"]).Medal.count().reset_index()
     sns.barplot(x='Season', y='Medal', data=season_medal_count)
     vbar.pyplot()
-
-
-
-
-
-
-
-
-
-
-
