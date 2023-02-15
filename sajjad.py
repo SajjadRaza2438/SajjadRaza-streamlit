@@ -16,7 +16,7 @@ st.subheader('Syed Sajjad Raza')
 
 
 # Load data into a pandas dataframe
-file = "C:\\Users\\Home PC\\Downloads\\athlete_events.csv"
+file = "C:\\Users\\Home PC\\Desktop\\Streamlit FILE\\athlete_events.csv"
 df = pd.read_csv('athlete_events.csv')
 
 # Check for missing values in each column
