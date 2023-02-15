@@ -8,7 +8,6 @@ Created on Sun Feb 12 17:55:00 2023
 import pandas as pd
 import numpy as np
 import streamlit as st
-import seaborn as sns
 st.set_page_config(layout="wide")
 
 
